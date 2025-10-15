@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BR Architects</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: aliceblue;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    header h3 {
+      font-weight: bold;
+    }
+
+    .nav-links p {
+      display: inline;
+      margin-left: 25px;
+      cursor: pointer;
+    }
+
+    .hero {
+      margin-top: 70px;
+      position: relative;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255, 255, 255, 0.8);
+      padding: 10px 20px;
+      font-size: 36px;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    hr {
+      margin-bottom: 30px;
+    }
+
+    .projects,
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .project-card,
+    .team-card {
+      width: calc(25% - 15px);
+      position: relative;
+    }
+
+    .project-card img,
+    .team-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .project-card h3 {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: white;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+
+    .team-card h3 {
+      margin-top: 10px;
+    }
+
+    .team-card p {
+      margin: 10px 0;
+    }
+
+    .team-card button {
+      background: slategrey;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .contact-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+    }
+
+    .contact-form button {
+      background: black;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .map img {
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    footer {
+      text-align: center;
+      background: black;
+      color: white;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .project-card,
+      .team-card {
+        width: 48%;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links p {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .project-card,
+      .team-card {
+        width: 100%;
+      }
+
+      .hero h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h3><b>BR</b> ARCHITECTS</h3>
+    <div class="nav-links">
+      <p>Projects</p>
+      <p>About</p>
+      <p>Contact</p>
+    </div>
+  </header>
+
+  <div class="hero">
+    <img src="https://www.brarchitect.in/uploads/1567776130416_Webp.net-compress-image%20(1).jpg" alt="Hero Image">
+    <h1><span style="font-weight: bold;">BR</span> ARCHITECTS</h1>
+  </div>
+
+  <section>
+    <h2>Projects</h2>
+    <hr>
+    <div class="projects">
+      <!-- Project Cards -->
+      <div class="project-card">
+        <img src="https://media.istockphoto.com/id/1412643214/photo/sunset-view-luxury-tropical-pool-villa.jpg?s=612x612&w=0&k=20&c=sKno2OitWRMjXdwnXD86_Jg0xOnTjk5zUFiG8YBKRXk=" alt="House">
+        <h3>Summer House</h3>
+      </div>
+      <div class="project-card">
+        <img src="https://i.pinimg.com/originals/d0/46/14/d04614c899b4d636f38848986f8a033b.jpg" alt="House">
+        <h3>Brick House</h3>
+      </div>
+      <div class="project-card">
+        <img src="https://www.bhg.com/thmb/U3sY3Up-M6It4eE7wyu6_zKBZN0=/1920x0/filters:no_upscale():strip_icc()/stylemaker-secret-white-den-b21ab396-d2636ff8d24449a99561054dc983475b.jpg" alt="House">
+        <h3>Renovated</h3>
+      </div>
+      <div class="project-card">
+        <img src="https://onekindesign.com/wp-content/uploads/2025/07/Custom-Barn-House-Montana-Payne-Cole-Designs-01-1-Kindesign.jpg" alt="House">
+        <h3>Barn House</h3>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>About</h2>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet nulla at metus ullamcorper, non sagittis elit vestibulum. Morbi commodo, purus nec bibendum egestas, ligula felis tincidunt metus, non blandit elit lorem nec nulla.</p>
+    <br><br>
+    <div class="team">
+      <!-- Team Members -->
+      <div class="team-card">
+        <img src="https://kyria-consulting.com/wp-content/uploads/2020/12/author-3.jpg" alt="">
+        <h3>John Doe</h3>
+        <h4>CEO & Founder</h4>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <button>Contact</button>
+      </div>
+      <div class="team-card">
+        <img src="https://bondarchitects.com/wp-content/uploads/2019/03/photocard-3-770x770.jpg" alt="">
+        <h3>Jane Doe</h3>
+        <h4>Architect</h4>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <button>Contact</button>
+      </div>
+      <div class="team-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKUTMjP0t_KMGJyR6kwolf7EPVKGFs9LAAeA&s" alt="">
+        <h3>Mike Ross</h3>
+        <h4>Architect</h4>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <button>Contact</button>
+      </div>
+      <div class="team-card">
+        <img src="https://www.barristers.com.au/wp-content/uploads/2025/06/img-thumb-DanStar.png" alt="">
+        <h3>Dan Star</h3>
+        <h4>Architect</h4>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <button>Contact</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <hr>
+    <p><strong>Let's get in touch and talk about your next project.</strong></p>
+    <br>
+    <div class="contact-form">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <input type="text" placeholder="Subject">
+      <input type="text" placeholder="Comment">
+      <button>SEND MESSAGE</button>
+    </div>
+    <div class="map">
+      <img src="https://www.w3schools.com/w3images/map.jpg" alt="Map">
+    </div>
+  </section>
+
+  <footer>
+    <p>css</p>
+  </footer>
+
+</body>
+</html>
